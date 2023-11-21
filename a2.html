@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <title>My orders</title>
+ </head>
+ <body>
+    <h1>Order Details</h1>
+    <p>
+        <strong>Name: </strong>Panner Pizza<br><br>
+        <strong>Quantity: </strong>1<br><br>
+        <strong>Price: </strong>₹120<br><br>
+        <strong>Payment method: </strong>Cash on delivery<br><br>
+        <label for="address"><strong>Address:</strong><input type="text" name="address"></label><br><br>
+        <button onclick="popup()">Order Now</button>
+</p>
+<script>
+    function popup(){
+        var add=document.getElementById("adr").value;
+        if(add==""){
+             alert("Fill the address");
+        }
+        else{
+            alert("order has been placed")
+        }
+    }
+</script>
+    
+ </body>
+ </html>
